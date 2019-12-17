@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "731677876239",
+    "firebase_url": "https://face-detection-95cab.firebaseio.com",
+    "project_id": "face-detection-95cab",
+    "storage_bucket": "face-detection-95cab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731677876239:android:163a84ad02e128e67d437a",
+        "android_client_info": {
+          "package_name": "com.example.harshil.facedetection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "731677876239-dmrgkcldfb0dpj059e1ekghiak34e4sq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.harshil.facedetection",
+            "certificate_hash": "2bf244f74574ec3f76bddd7ec4dbeab467ec2be6"
+          }
+        },
+        {
+          "client_id": "731677876239-bebe9imfnc49d222begkgqpibhhe7vkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_SlYQ_hWFn2HYDy9mfW4Ms-AGchirvc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "731677876239-bebe9imfnc49d222begkgqpibhhe7vkl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
