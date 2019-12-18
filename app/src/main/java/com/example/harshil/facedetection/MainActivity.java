@@ -1,18 +1,10 @@
 package com.example.harshil.facedetection;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Camera;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -28,14 +20,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.harshil.facedetection.helper.GraphicOverlay;
-import com.google.android.gms.common.internal.Objects;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.vision.Frame;
 import com.google.android.gms.vision.face.Face;
 import com.google.android.gms.vision.face.FaceDetector;
-import com.google.firebase.FirebaseApiNotAvailableException;
 import com.google.firebase.ml.vision.FirebaseVision;
 import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 import com.google.firebase.ml.vision.text.FirebaseVisionText;
@@ -158,8 +154,8 @@ public class MainActivity extends AppCompatActivity {
                                         Toast.makeText(getApplicationContext(),"No Text found",Toast.LENGTH_LONG).show();
                                         return;
                                     }
-                                    GraphicOverlay mGraphicOverlay = new GraphicOverlay(getApplicationContext(),null);
-                                    mGraphicOverlay.clear();
+                                    //GraphicOverlay mGraphicOverlay = new GraphicOverlay(getApplicationContext(),null);
+                                    //mGraphicOverlay.clear();
                                     for (int i = 0; i < blocks.size(); i++) {
                                         List<FirebaseVisionText.Line> lines = blocks.get(i).getLines();
                                         for (int j = 0; j < lines.size(); j++) {
